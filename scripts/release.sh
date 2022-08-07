@@ -5,7 +5,7 @@ node -p "require('./package.json').version" | xargs -I {} git tag -a v{} -m 'Ver
 npm run build
 
 # release upstream 
-git push origin master
+git push origin main 
 git push --tags
 npm publish
 
